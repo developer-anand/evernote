@@ -39,7 +39,10 @@ const SideBar = ({
               placeholder="Enter note title"
               onKeyUp={(e) => updateTitle(e.target.value)}
             />
-            <Button className={classes.newNoteSubmitBtn} onClick={newNote}>
+            <Button
+              className={classes.newNoteSubmitBtn}
+              onClick={() => newNote(title)}
+            >
               Submit Note
             </Button>
           </div>
